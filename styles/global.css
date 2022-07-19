@@ -1,35 +1,83 @@
-:root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
-    --footer-background: rgb(243, 242, 242);
+body, html {
+    height: 100%;
+    width: 100%;
 }
 
-body {
-    height: 100vh;
-    font-family: 'Rubik', san-serif;
-    background: var(--background);
+.container {
+    border: solid 1.5px black;
+    margin: 0 auto;
+    height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 5% 45% 35% 15%;
+
 }
 
-header {
-    position: sticky;
-    top: 0;
+.header{
+    border: solid 1.5px black;
+    display: grid;
+    background-color: #03045e;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    border: solid 1.5px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #023e8a;
+    
+    
+    
+}
+
+.other-channels {
+    border: solid 1.5px black;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: #0077b6;
+    justify-content: center;
+}
+
+.games-to-watch {
+    border: solid 1.5px black;
+    background-color: #0096c7;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.content-inside {
+    border: solid 1.5px black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   display: flex;
+   
+
+}
+
+.channels-inside {
+    border: solid 1.5px black;
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    justify-content: center;
+   
+
+    
 }
 
-main {
-    padding: 20px;
-}
-
-footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
+.rec-games {
+    border: solid 1.5px black;
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box {
+border-radius: 10px;
+
 }
